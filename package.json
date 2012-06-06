@@ -1,0 +1,32 @@
+{
+  "name": "live-view",
+  "preferGlobal": "true",
+  "version": "0.0.1",
+  "author": "Benjamin Eckel bhelx@freenode",
+  "description": "A simple http server that reloads the page on a file change similar to Meteor.js",
+  "homepage": "https://github.com/bhelx/live-view",
+  "bin": {
+    "live-file": "./bin/live-view"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://bhelx@github.com/bhelx/live-view.git"
+  },
+  "keywords": [
+    "websockets",
+    "live",
+    "live-view",
+    "meteor"
+  ],
+  "dependencies" : {
+    "socket.io":    "0.9.x",
+    "optimist":     "*",
+    "node-static":  "0.5.x",
+    "jsdom":        "0.2.x"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}

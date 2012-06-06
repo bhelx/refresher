@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var LiveView = require('..');
+
+new LiveView({
+  root: '.',
+  port: 3000
+}).listen();
+
