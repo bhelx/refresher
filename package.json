@@ -1,17 +1,17 @@
 {
-  "name": "live-view",
+  "name": "refresher",
   "preferGlobal": "true",
   "version": "0.0.1",
   "author": "Benjamin Eckel bhelx@freenode",
   "description": "A simple http server that reloads the page on a file change similar to Meteor.js",
-  "homepage": "https://github.com/bhelx/live-view",
+  "homepage": "https://github.com/bhelx/refresher",
   "bin": {
-    "live-file": "./bin/live-view"
+    "refresher": "./bin/refresher"
   },
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "https://bhelx@github.com/bhelx/live-view.git"
+    "url": "https://bhelx@github.com/bhelx/refresher.git"
   },
   "keywords": [
     "websockets",

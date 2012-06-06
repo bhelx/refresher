@@ -3,7 +3,7 @@ var http    = require('http'),
     fs      = require('fs'),
     nstatic = require('node-static');
 
-var LiveView = function (config) {
+var Refresher = function (config) {
 
   this.config = config;
   var file = new(nstatic.Server)(config.root);
@@ -23,7 +23,7 @@ var LiveView = function (config) {
 
 };
 
-LiveView.prototype.listen = function () {
+Refresher.prototype.listen = function () {
 
   this.server.listen(this.config.port, null);
   console.log('Server Running :)');
@@ -48,4 +48,4 @@ LiveView.prototype.listen = function () {
 
 };
 
-module.exports = LiveView;
+module.exports = Refresher;

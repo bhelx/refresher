@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-var LiveView = require('..');
+var Refresher = require('..');
 
-new LiveView({
+new Refresher({
   root: '.',
   port: 3000
 }).listen();
