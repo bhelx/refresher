@@ -9,6 +9,7 @@ var Refresher = function (config) {
   var file = new(nstatic.Server)(config.root);
 
   this.server = http.createServer(function (req, res) {
+    console.log(req.url);
     req.addListener('end', function () {
       if (req.url === '/') {
         res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -35,6 +36,8 @@ Refresher.prototype.listen = function () {
   });
 
   var index = this.config.root + '/index.html';
+  console.log('Listen Index: ' + index);
+
   fs.watchFile(index, function (curr, prev) {
     if (curr.mtime > prev.mtime) {
       io.sockets.emit('reload', { reload: true });

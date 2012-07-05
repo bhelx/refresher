@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 
+var argv = require('optimist')
+    .usage('Usage: refresher [options]')
+    .default('port', 3000)
+    .default('root', process.cwd())
+    .argv;
+
 var Refresher = require('..');
 
-new Refresher({
-  root: '.',
-  port: 3000
-}).listen();
+console.log('Config: ');
+console.log('\t' + argv);
+
+new Refresher(argv).listen();
 
