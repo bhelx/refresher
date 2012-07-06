@@ -14,7 +14,7 @@ You can install via npm:
   npm install refresher -g
 ```
 
-Cd to your root directory (currently requires index.html) and run server
+Cd to your static root directory (currently requires index.html) and run server
 
 ```
   refresher
