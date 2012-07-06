@@ -20,7 +20,7 @@ Cd to your static root directory (currently requires index.html) and run server
   refresher
 ```
 
-Point your browser at [http://localhost:3000](http://localhost:3000) to see the results.
+Point your browser at [http://localhost:3000](http://localhost:3000).
 
 Make a change to your index.html file and watch the browser re-render.
 
